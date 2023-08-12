@@ -1,11 +1,11 @@
-import Home from '@/app/Home'
+import HomeTest from '@/app/HomeTest'
 import '@testing-library/jest-dom'
 
 import { render, screen } from '@testing-library/react'
 
 describe('Calculator', () => {
   it('renders a calculator', () => {
-    render(<Home />)
+    render(<HomeTest />)
     // check if all components are rendered
     expect(screen.getByTestId('result')).toBeInTheDocument()
     expect(screen.getByTestId('num1')).toBeInTheDocument()
